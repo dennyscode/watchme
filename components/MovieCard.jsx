@@ -8,7 +8,8 @@ function MovieCard({movie}) {
             <Image 
                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} 
                 width={700} 
-                height={800} 
+                height={800}
+                loader="custom"
                 className="rounded-t-md"
             />
             <div className="px-6 py-2">
