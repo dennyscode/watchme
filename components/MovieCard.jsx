@@ -6,7 +6,8 @@ function MovieCard({movie}) {
     <Link href={`/movie/${movie.id}`}>
         <div className="bg-white shadow-sm rounded-md cursor-pointer">
             <Image 
-                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} 
+                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                loader={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                 width={700} 
                 height={800} 
                 className="rounded-t-md"
